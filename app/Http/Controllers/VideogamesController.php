@@ -16,7 +16,7 @@ class VideogamesController extends Controller
     {
         $allVideogames = Videogames::all();
         $data = [
-            'videogames' = $allVideogames
+            'videogames' => $allVideogames
         ];
         return view('videogames.index', $data);
     }
