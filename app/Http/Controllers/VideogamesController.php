@@ -14,7 +14,7 @@ class VideogamesController extends Controller
      */
     public function index()
     {
-        $allVideogamesa = Videogames::all();
+        $allVideogames = Videogames::all();
         $data = [
             'videogames' = $allVideogames
         ];
