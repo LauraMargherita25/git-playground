@@ -14,11 +14,11 @@ class VideogamesController extends Controller
      */
     public function index()
     {
-        $allVideogamesa = vidiogames::all();
+        $allVideogamesa = Videogames::all();
         $data = [
-            'videogames' = $allVideogamesa
+            'videogames' = $allVideogames
         ];
-        retun view('home', $data);
+        retun view('videogames.index', $data);
     }
 
     /**
