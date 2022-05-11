@@ -18,7 +18,7 @@ class VideogamesController extends Controller
         $data = [
             'videogames' = $allVideogames
         ];
-        retun view('videogames.index', $data);
+        return view('videogames.index', $data);
     }
 
     /**
